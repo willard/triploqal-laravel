@@ -1,0 +1,172 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+//font-awesome
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+#logo{
+    width: 100px;
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+button.add {
+    width: 100%;
+    margin: 10px 0;
+}
+#feeds .card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.15);
+}
+#feeds img.img-fluid.photo.card-img-top {
+    max-width: 600px;
+}
+
+#feeds span.username {
+    font-weight: 700;
+}
+
+#feeds p.card-text.caption {
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
+}
+
+button#share{
+    width: 100%;
+}
+#feeds .card ul.user-action {
+    padding: 0;
+    text-align: right;
+}
+#feeds .card ul.user-action li {
+    display: inline-block;
+}
+// #feeds .card ul.user-action a {
+//     margin-right: 6px;
+//     color: #2196F3;
+// }
+// #feeds .card ul.user-action a:hover{
+//     color: #F44336;
+// }
+textarea.edit-caption {
+    width: 100%;
+    padding: 10px !important;
+    border: 1px solid #ffc107;
+}
+.preview {
+    height: 300px;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+  }
+
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .modal-container {
+    width: 600px;
+    margin: 0px auto;
+    background: none;
+    border-radius: 2px;
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+  }
+
+  .modal-body {
+    margin: 20px 0;
+  }
+
+  .modal-default-button {
+    float: right;
+  }
+
+  /*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+
+  .modal-enter {
+    opacity: 0;
+  }
+
+  .modal-leave-active {
+    opacity: 0;
+  }
+
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background: #fff;
+}
+.user-profile {
+    padding: 20px 50px;
+}
+.user-profile .avatar {
+    text-align: center;
+}
+.user-profile .avatar img {
+    width: 200px;
+    border-radius: 100px;
+}
+.user-profile .username {
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 40px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.VueCarousel-pagination {
+    position: absolute;
+    bottom: 0;
+}
